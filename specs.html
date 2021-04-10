@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Glass</title>
+    <link href="../projeto-glass-html5/css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="../projeto-glass-html5/css/specs.css">
+    <script type="text/javascript" src="./javascript/funcoes.js";></script>
+</head>
+<body>
+<div id = "interface">
+    <header1>
+    <header id="cabeçalho"d>
+    <h1>Google Glass</h1>
+    <h2>A revolução do Google está chegando</h2>
+    </header>
+    
+    <img id="icone" src="../projeto-glass-html5/imagens/especificacoes.png" alt="">
+    
+    <nav id="menu">
+    <h1>Menu Principal</h1>
+    <ul>
+        <li onmouseover="mudaFoto('./imagens/home.png')" onmouseout="mudaFoto('../projeto-glass-html5/imagens/especificacoes.png')"><a href="index.html">Home</a></li>
+        <li><a href="specs.html">Especificações</a></li>
+        <li onmouseover="mudaFoto('./imagens/fotos.png')" onmouseout="mudaFoto('../projeto-glass-html5/imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
+        <li onmouseover="mudaFoto('./imagens/multimidia.png')" onmouseout="mudaFoto('../projeto-glass-html5/imagens/especificacoes.png')"><a href="multimidia.html">Multimídia</a></li>
+        <li onmouseover="mudaFoto('./imagens/contato.png')" onmouseout="mudaFoto('../projeto-glass-html5/imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+    </ul>
+    </nav>
+    
+    </header1>
+<section id="corpo-full">
+    <header2 id="cabecalho-artigo">
+        <h2>Glass > Especificações</h2>
+        <h1>Raio-X no Google Glass</h1>
+        <h2>por Deivid Adrian</h2>
+        <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+    </header2>
+<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. 
+Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+    <section id="conteudo">
+        <img src="../projeto-glass-html5/imagens/glass-esquema-marcado.jpg" alt="Esquema do Google Glass" usemap="#meumapa">
+        <map name="meumapa">
+            <area shape="rect" coords="179,202,270,260" href="../projeto-glass-html5/google-glass.html#tela" target="janela" alt="">
+            <area shape="circle" coords="158,243,12" href="../projeto-glass-html5/google-glass.html#camera" target="janela" alt="">
+            <area shape="circle" coords="73,52,12" href="../projeto-glass-html5/google-glass.html#gadgets" target="janela" alt="">
+            <area shape="rect" coords="28,143,83,216,84,249,27,169" href="../projeto-glass-html5/google-glass.html#sensores" targe="janela" alt="">
+        </map>
+        <iframe scrolling="no" src="google-glass.html" name="janela" id="frame-spec" frameborder="0"></iframe>
+    </section>
+</section>
+<footer id="rodape">
+    &copy; Copyright 2013 - by Deivid Adrian
+    <br><a href="https://www.facebook.com/deivid.adrian/" target="blank">Facebook</a> | <a href="https://twitter.com/cursosemvideo?lang=en" target="blank">Twitter</a></br>
+    </footer>
+    <div>
+    </body>
+    </html>
