@@ -8,6 +8,13 @@
     <link href="../projeto-glass-html5/css/estilo.css" rel="stylesheet">
     <link href="../projeto-glass-html5/css/form.css" rel="stylesheet">
     <script type="text/javascript" src="./javascript/funcoes.js";></script>
+    <script>
+        function calc_total(){
+            var qtd = parseInt(document.getElementById('quant02').value);
+            tot = qtd * 1500;
+            document.getElementById('tot02').value = tot;
+        }
+    </script>
 </head>
 <body>
 <div id = "interface">
@@ -39,13 +46,13 @@
         <h3 class="direita">Atualizado em 01/Maio/2013</h3>
     </header2>
 
-<form action="" method="POST" id="contato" action="deividadrian24@gmail.com">
+<form action="" method="POST" id="contato" action="deividadrian24@gmail.com" oninput="calc_total();" >
    <fieldset id="usuario">
     <legend>Identificação do Usuário</legend>   
     <p><label for="name02">Nome: </label><input type="text" name="nome01" id="name02" size="20" maxlength="30" placeholder="Nome Completo"></p>
     <p><label for="senha02">Senha: </label><input type="password" name="senha01" id="senha02" size="8" maxlength="8" placeholder="8 dígitos"></p> 
     <p><label for="email02">E-mail: </label><input type="email" name="email01" id="email02" size="40" maxlength="50" placeholder="Separe por vírgulas"></p> 
-    <fieldset>
+    <fieldset id="sexo">
         <legend>Sexo</legend>
         <input type="radio" name="sexo01" id="masc01" checked/> <label for="masc01">Masculino</label><br/>
         <input type="radio" name="sexo01" id="fam01"/> <label for="fam01"> Feminino</label> 
@@ -88,18 +95,22 @@
     <p> <label for="">Grau de Urgência:</label> 
     Mín<input type="range" id="urg01" id="urg02" min="0" max="10" step="2">Máx </p> 
     <p> <label for="idmsn">Mensagem:</label></p> 
-    <p><textarea name="msn01" id=""msn02 cols="30" rows="10" placeholder="Sua mensagem..."></textarea></p>
+    <p><textarea name="msn01" id=""msn02 cols="50" rows="10" placeholder="Sua mensagem..."></textarea></p>
 </fieldset>
 
 <fieldset id="pedido">
 <legend>Quero um Google Glass</legend> 
-    <p><label for="">Gostaria de adquirir um Google Glass quando disponível</label> </p> 
-    <p><label for="">Cor:</label></p> 
-    <p><label for="">Quantidade:</label></p> 
-    <p><label for="">Preço Total: R$</label></p> 
+    <p><input type="checkbox" name="pad01" id="pad02" checked>
+    <label for="">Gostaria de adquirir um Google Glass quando disponível</label> </p> 
+    <p><label for="">Cor:</label>
+    <input type="color" name="cor01" id="cor02" value="#0000ff"> </p> 
+    <p><label for="">Quantidade:</label>
+    <input type="number" name="quant01" id="quant02" min="0" max="5" value="0"></p> 
+    <p><label for="">Preço Total: R$</label>
+    <input type="text" name="tot01" id="tot02" placeholder="Total a Pagar" readonly> </p> 
 </fieldset>
 
-[BOTÃO ENVIAR]</form>
+<input type="image" name="enviar01" src="../projeto-glass-html5/imagens/botao-enviar.png"></form>
 
 
 <footer id="rodape">
