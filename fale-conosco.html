@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Glass</title>
     <link href="../projeto-glass-html5/css/estilo.css" rel="stylesheet">
+    <link href="../projeto-glass-html5/css/form.css" rel="stylesheet">
     <script type="text/javascript" src="./javascript/funcoes.js";></script>
 </head>
 <body>
@@ -30,50 +31,76 @@
     </nav>
     
     </header1>
-Google Glass
-A revolução do Google está chegando
 
-[AQUI ENTRA UMA FOTO]
+    <header2 id="cabecalho-artigo">
+        <h2>Fale Conosco > Contato</h2>
+        <h1>Formulário de Contato</h1>
+        <h2>por Deivid Adrian</h2>
+        <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+    </header2>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<form action="" method="POST" id="contato" action="deividadrian24@gmail.com">
+   <fieldset id="usuario">
+    <legend>Identificação do Usuário</legend>   
+    <p><label for="name02">Nome: </label><input type="text" name="nome01" id="name02" size="20" maxlength="30" placeholder="Nome Completo"></p>
+    <p><label for="senha02">Senha: </label><input type="password" name="senha01" id="senha02" size="8" maxlength="8" placeholder="8 dígitos"></p> 
+    <p><label for="email02">E-mail: </label><input type="email" name="email01" id="email02" size="40" maxlength="50" placeholder="Separe por vírgulas"></p> 
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo01" id="masc01" checked/> <label for="masc01">Masculino</label><br/>
+        <input type="radio" name="sexo01" id="fam01"/> <label for="fam01"> Feminino</label> 
+    </fieldset>
+    <p><label for="data02">Data de Nascimento: </label>
+        <input type="date" name="data01" id="data02"></p>  
+</fieldset> 
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+<fieldset id="endereço">
+    <legend>Endereço</legend>
+    <p> <label for="rua02">Logradouro: </label> 
+        <input type="text" name="rua01" id="rua02" size="50" maxlength="80" placeholder="Rua,Av,Trav, ...."> </p>  
+    <p><label for="numero02">Número:</label> 
+        <input type="number" name="numero01" id="numero02" min="0" max="9999"> </p> 
+    <p><label for="estado02">Estado: </label>
+        <select name="caixa" id="caixa01">
+            <optgroup label="Região Sudeste"> 
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="SP">São Paulo</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+            <option value="PR">Paraná</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+            </optgroup> 
+        </select></p>
+    <p><label for="cidade02">Cidade:</label> 
+        <input type="text" name="cidade01" id="cidade02" size="20" maxlength="40" placeholder="Sua cidade" list="cidades"> </p> 
+        <datalist id="cidades">
+            <option value="Rio de Janeiro"></option>
+            <option value="Nova Iguaçu"></option>
+            <option value="Niteroí"></option>
+            <option value="Belford Roxo"></option>
+        </datalist>
+</fieldset>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+<fieldset id="mensagem">
+<legend>Mensagem</legend> 
+    <p> <label for="">Grau de Urgência:</label> 
+    Mín<input type="range" id="urg01" id="urg02" min="0" max="10" step="2">Máx </p> 
+    <p> <label for="idmsn">Mensagem:</label></p> 
+    <p><textarea name="msn01" id=""msn02 cols="30" rows="10" placeholder="Sua mensagem..."></textarea></p>
+</fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+<fieldset id="pedido">
+<legend>Quero um Google Glass</legend> 
+    <p><label for="">Gostaria de adquirir um Google Glass quando disponível</label> </p> 
+    <p><label for="">Cor:</label></p> 
+    <p><label for="">Quantidade:</label></p> 
+    <p><label for="">Preço Total: R$</label></p> 
+</fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+[BOTÃO ENVIAR]</form>
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
 
 <footer id="rodape">
     &copy; Copyright 2013 - by Deivid Adrian
